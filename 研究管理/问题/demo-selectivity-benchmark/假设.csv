@@ -1,0 +1,4 @@
+problem_id,hypothesis_id,hypothesis_version,statement,claim_scope,protocol_id,protocol_version,supersedes,decision_ref,note
+demo-selectivity-benchmark,H1,draft-1,固定预算下来源加权收益能否跨独立合成系列重复,固定面板同信息同预算,H1-MINIMAL,draft-1,,,提案未确认
+demo-selectivity-benchmark,H2.1,draft-1,部署前可得结构背景相对相似性对照组是否有净增益,固定面板同信息同预算,H1-MINIMAL,draft-1,,,H1后再决定
+demo-selectivity-benchmark,H2.2,draft-1,相同输入条件模型之后显式选源是否仍有额外价值,固定面板同信息同预算,H1-MINIMAL,draft-1,,,H1后再决定

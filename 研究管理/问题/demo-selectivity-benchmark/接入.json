@@ -1,0 +1,21 @@
+{
+  "schema_version": "topic-bindings.v1",
+  "problem_id": "demo-selectivity-benchmark",
+  "literature": {
+    "comparison": "SRC-COMPARE",
+    "relations": "SRC-EDGES"
+  },
+  "g3": {
+    "profile": "fixed-panel-preview.v1",
+    "design_ref": {
+      "path": "研究管理/问题/demo-selectivity-benchmark/协议/H1-MINIMAL/draft-1/design.json",
+      "sha256": "8fcb4a4bbc9dcd827b35b9098aefe42f0fd63e0ab5702802ec6387112a1eac65",
+      "bytes": 2535
+    },
+    "eligibility_ref": {
+      "path": "研究管理/数据/准入/E-DEMO-20261124/manifest.json",
+      "sha256": "5f2f7b7756c88225b18a7e42217988bf42aacc558f9640b6f187489a0f7fb4e8",
+      "bytes": 936
+    }
+  }
+}

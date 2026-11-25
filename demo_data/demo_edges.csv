@@ -1,0 +1,4 @@
+from_id,to_id,relation,compare_rows,locator,status,basis
+L101,项目参照,supports_protocol,C01;C05,Synthetic Spec Sec 2.1,checked_demo,Provides series-aware holdout and bootstrap evaluation unit.
+L103,项目参照,constrains_claim,C03;C05,Synthetic Negative Control Fig 1,checked_demo,Prevents assuming explicit source selection outperforms matched conditional baselines.
+L108,L101,calibrates_power,C01;C04,Synthetic Power Table 2,checked_demo,Defines minimum independent series count before running confirmatory tests.

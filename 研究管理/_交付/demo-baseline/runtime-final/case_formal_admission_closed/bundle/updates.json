@@ -1,0 +1,17 @@
+{
+  "ended_at": "2026-11-25T02:09:36.198618Z",
+  "gpu_hours": 0.0,
+  "metrics": {
+    "bytes": 145,
+    "path": "metrics.csv",
+    "sha256": "0448587053e6f643fbdbbe47825868cce1916ba42976a5239d39187bf861919c"
+  },
+  "predictions": {
+    "bytes": 227,
+    "path": "predictions.csv",
+    "sha256": "13076a4259894fd6201f7d63212148e6ce18ff3b9c7bd60ec9bb8e7855e2bbef"
+  },
+  "resource_accounting_status": "measured",
+  "revision_kind": "finish",
+  "status": "done"
+}

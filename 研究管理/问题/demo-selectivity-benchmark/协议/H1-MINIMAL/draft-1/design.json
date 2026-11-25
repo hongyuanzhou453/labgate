@@ -1,0 +1,70 @@
+{
+  "schema_version": "design-draft.v0.2",
+  "problem_id": "demo-selectivity-benchmark",
+  "protocol_id": "H1-MINIMAL",
+  "version": "draft-1",
+  "status": "draft",
+  "formal_use_allowed": false,
+  "study_kind": "retrospective_exploratory_proposal",
+  "hypotheses": [
+    {
+      "hypothesis_id": "H1",
+      "hypothesis_version": "draft-1",
+      "statement": "Fixed-budget source weighting yields repeatable series-level selectivity gains on unseen chemical series.",
+      "status": "proposed"
+    },
+    {
+      "hypothesis_id": "H2.1",
+      "hypothesis_version": "draft-1",
+      "statement": "Pre-assay pocket/conformational context adds value beyond similarity and label-permutation controls.",
+      "status": "deferred_until_H1"
+    },
+    {
+      "hypothesis_id": "H2.2",
+      "hypothesis_version": "draft-1",
+      "statement": "Explicit source selection outperforms an equally informed conditional baseline under matched budgets.",
+      "status": "deferred_until_H1"
+    }
+  ],
+  "decisions": {
+    "target_offtarget": null,
+    "endpoint": null,
+    "source_selection": null,
+    "construct_comparability": null,
+    "series_rule": null,
+    "information_availability": null,
+    "effect_threshold": null,
+    "harm_threshold": null,
+    "precision_target": null,
+    "seed_plan": null,
+    "resampling_plan": null,
+    "multiplicity_policy": null,
+    "label_budget": null,
+    "compute_budget": null,
+    "training_repository": null,
+    "persistent_storage": null,
+    "prior_test_exposure": null
+  },
+  "missing_reasons": {
+    "decisions.target_offtarget": "not_checked",
+    "decisions.endpoint": "not_checked",
+    "decisions.source_selection": "not_checked",
+    "decisions.construct_comparability": "not_checked",
+    "decisions.series_rule": "not_checked",
+    "decisions.information_availability": "not_checked",
+    "decisions.effect_threshold": "not_checked",
+    "decisions.harm_threshold": "not_checked",
+    "decisions.precision_target": "not_checked",
+    "decisions.seed_plan": "not_checked",
+    "decisions.resampling_plan": "not_checked",
+    "decisions.multiplicity_policy": "not_checked",
+    "decisions.label_budget": "not_checked",
+    "decisions.compute_budget": "not_checked",
+    "decisions.training_repository": "not_checked",
+    "decisions.persistent_storage": "not_checked",
+    "decisions.prior_test_exposure": "not_checked"
+  },
+  "freeze_record_ref": null,
+  "decision_refs": [],
+  "notes": "Synthetic draft for open-source LabGate demonstration; 17 required decisions remain null."
+}

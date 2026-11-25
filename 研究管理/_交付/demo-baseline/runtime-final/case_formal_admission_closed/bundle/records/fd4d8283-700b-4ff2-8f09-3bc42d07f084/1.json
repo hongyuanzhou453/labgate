@@ -1,0 +1,104 @@
+{
+  "actor": "training_entry",
+  "artifacts": [],
+  "baseline_id": null,
+  "budget_condition": "fixture-only",
+  "change_reason": null,
+  "commit": null,
+  "config_ref": {
+    "bytes": 51,
+    "path": "config.json",
+    "sha256": "bae5e90bd7102fd5ec58f8ba321f8d48bb33ce68ac45a588605a01353b64cb9e"
+  },
+  "control_ids": [],
+  "dataset_ref": {
+    "bytes": 228,
+    "dataset_id": "D-fixture",
+    "path": "data.json",
+    "sha256": "8322100ddbefc893637873bfedc88afadc2ebe0429ebba649fd517e750d1c9dc"
+  },
+  "dirty": false,
+  "ended_at": "2026-11-25T02:09:36.198618Z",
+  "env": {
+    "cuda": null,
+    "determinism_settings": {
+      "seed": 0
+    },
+    "driver": null,
+    "framework": "stdlib",
+    "framework_version": "stdlib",
+    "gpu_count": 0,
+    "gpu_model": null,
+    "lockfile_sha256": null,
+    "python": "3.12.2",
+    "resolved_env_sha256": null
+  },
+  "evidence_refs": [],
+  "failure_reason": null,
+  "fold_id": "F0",
+  "gpu_hours": 0.0,
+  "group_id": "G1",
+  "hypothesis_refs": [
+    {
+      "hypothesis_id": "H1",
+      "hypothesis_version": "fixture-1"
+    }
+  ],
+  "last_heartbeat_at": "2026-11-25T02:09:36.188637Z",
+  "method_id": "constant-fixture",
+  "metrics": {
+    "bytes": 145,
+    "path": "metrics.csv",
+    "sha256": "0448587053e6f643fbdbbe47825868cce1916ba42976a5239d39187bf861919c"
+  },
+  "missing_reasons": {
+    "baseline_id": "not_applicable",
+    "commit": "not_applicable",
+    "env.cuda": "not_applicable",
+    "env.driver": "not_applicable",
+    "env.gpu_model": "not_applicable",
+    "env.lockfile_sha256": "not_applicable",
+    "env.resolved_env_sha256": "not_applicable",
+    "repo": "not_applicable"
+  },
+  "note": "",
+  "parent_record_sha256": "f4bf80f540180d9e251aca5c7ff8d37c1e9831f5724fe4d2a1e8093d18cb25ff",
+  "platform": "local_fixture",
+  "prediction_freeze_ref": null,
+  "predictions": {
+    "bytes": 227,
+    "path": "predictions.csv",
+    "sha256": "13076a4259894fd6201f7d63212148e6ce18ff3b9c7bd60ec9bb8e7855e2bbef"
+  },
+  "preflight_report_ref": {
+    "path": "preflight/fd4d8283-700b-4ff2-8f09-3bc42d07f084.json",
+    "sha256": "b01713a8997e9d708b74305751293a34c0af8a9fe915bc2bd196dd535c5f87e7"
+  },
+  "problem_id": "fixture-one",
+  "protocol_ref": {
+    "bytes": 676,
+    "path": "protocol.json",
+    "protocol_id": "FIXTURE",
+    "sha256": "53192f294c9773a4a0e503f6f82d2b9bc847b2bc27cadf83f8f18ee1943c63c1",
+    "version": "1"
+  },
+  "recorded_at": "2026-11-25T02:09:36.247437Z",
+  "repo": null,
+  "resource_accounting_status": "measured",
+  "resume_checkpoint_ref": null,
+  "resumed_from": null,
+  "revision": 1,
+  "revision_kind": "finish",
+  "run_id": "fd4d8283-700b-4ff2-8f09-3bc42d07f084",
+  "run_kind": "smoke",
+  "schema_version": "run.v0.2",
+  "seed": 0,
+  "split_ref": {
+    "bytes": 151,
+    "path": "split.json",
+    "sha256": "2e38b4b9e0e6e88434d8a64fd92370397f05416e6e8b371657842e3142cfed3b",
+    "split_id": "S-fixture"
+  },
+  "started_at": "2026-11-25T02:09:36.188637Z",
+  "status": "done"
+}

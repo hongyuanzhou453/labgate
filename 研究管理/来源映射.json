@@ -1,0 +1,37 @@
+{
+  "schema_version": "source-map.v1",
+  "audit_review_path": "demo_data/demo_audit_review.md",
+  "audit_scope": "Synthetic demonstration source map; verifies paths, byte sizes, SHA-256 digests, and tabular headers without duplicating upstream files",
+  "sources": [
+    {
+      "source_id": "SRC-LEDGER",
+      "path": "demo_data/demo_ledger.csv",
+      "source_kind": "research_source"
+    },
+    {
+      "source_id": "SRC-ALIASES",
+      "path": "demo_data/demo_aliases.json",
+      "source_kind": "research_source"
+    },
+    {
+      "source_id": "SRC-COMPARE",
+      "path": "demo_data/demo_compare.tsv",
+      "source_kind": "research_source"
+    },
+    {
+      "source_id": "SRC-EDGES",
+      "path": "demo_data/demo_edges.csv",
+      "source_kind": "research_source"
+    },
+    {
+      "source_id": "SRC-AUDIT-REVIEW",
+      "path": "demo_data/demo_audit_review.md",
+      "source_kind": "audit"
+    },
+    {
+      "source_id": "SRC-AUDIT-ELIGIBILITY",
+      "path": "demo_data/demo_panel_audit.json",
+      "source_kind": "audit"
+    }
+  ]
+}

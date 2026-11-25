@@ -1,0 +1,32 @@
+{
+  "congeneric_series": [
+    "Congeneric Series / 同系物系列",
+    "Analogous ligands sharing a core scaffold in a SAR series.",
+    "共享核心骨架的一组药化修饰配体，是防泄漏评估的独立结构单位。"
+  ],
+  "fail_closed": [
+    "Fail-Closed Gate / 默认闭门护栏",
+    "Missing prerequisites or unconfirmed research choices hard-block downstream runs.",
+    "缺失前置确认或校验证据时显式拒绝执行，绝不静默跳过或代填决策。"
+  ],
+  "censored_ki": [
+    "Inequality-Censored Value (>/<)",
+    "Upper/lower assay bounds rather than exact singleton intervals.",
+    "带不等号界限的测量记录，与精确点值严格区分，禁止插补为精确靶标差。"
+  ],
+  "delta_p": [
+    "Target vs. Off-Target Selectivity (Δ_P)",
+    "Affinity difference pKd/pKi(Target) - pKd/pKi(Off-target) on a fixed panel.",
+    "同一配体在固定目标靶点与反靶点之间的选择性差值。"
+  ],
+  "test_exposure": [
+    "Cross-Version Test Exposure Journal",
+    "Immutable append-only log tracking every access to final_test splits across protocol freezes.",
+    "跨协议版本追查 final_test 预登记与实际读取时间的只增不改审计日志。"
+  ],
+  "carryover_reconciliation": [
+    "Weekly Carryover Reconciliation",
+    "Every unfinished item from week N-1 must map to a task in week N or a reasoned backlog entry.",
+    "周报承接对账机制，严禁静默丢失未完成任务。"
+  ]
+}

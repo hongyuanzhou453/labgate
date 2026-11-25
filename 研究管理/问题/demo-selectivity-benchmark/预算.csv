@@ -1,0 +1,4 @@
+problem_id,budget_id,kind,unit,planned_limit,actual_value,missing_reason,count_definition,stop_action
+demo-selectivity-benchmark,BUD-T,target_labels,unique_measurements,,,not_checked,按目标侧测量去重,未确认不运行
+demo-selectivity-benchmark,BUD-O,offtarget_labels,unique_measurements,,,not_checked,按反靶侧测量去重,未确认不运行
+demo-selectivity-benchmark,BUD-GPU,compute,gpu_hours,,,not_checked,多GPU累计时长上限,达到确认上限即停止

@@ -1,0 +1,97 @@
+{
+  "actual_python": "3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:54:21) [Clang 16.0.6 ]",
+  "checked_at": "2026-11-25T02:09:35.527776Z",
+  "experiment_sha256": "e29bfc9af0af290a290eca0311f964da5948df129c5b60dc681b5c56f5f07e97",
+  "files": [
+    {
+      "bytes": 51,
+      "path": "config.json",
+      "sha256": "bae5e90bd7102fd5ec58f8ba321f8d48bb33ce68ac45a588605a01353b64cb9e"
+    },
+    {
+      "bytes": 228,
+      "path": "data.json",
+      "sha256": "8322100ddbefc893637873bfedc88afadc2ebe0429ebba649fd517e750d1c9dc"
+    },
+    {
+      "bytes": 35,
+      "path": "data/labels.csv",
+      "sha256": "f6f55e542f5a13602cf7ac5ac2d92f548cc312d4653eb80e50fab8c9a4a2bd64"
+    },
+    {
+      "bytes": 676,
+      "path": "protocol.json",
+      "sha256": "53192f294c9773a4a0e503f6f82d2b9bc847b2bc27cadf83f8f18ee1943c63c1"
+    },
+    {
+      "bytes": 151,
+      "path": "split.json",
+      "sha256": "2e38b4b9e0e6e88434d8a64fd92370397f05416e6e8b371657842e3142cfed3b"
+    }
+  ],
+  "run_kind": "smoke",
+  "schema_version": "preflight.v1",
+  "scientific_identity": {
+    "baseline_id": null,
+    "budget_condition": "fixture-only",
+    "commit": null,
+    "config_ref": {
+      "bytes": 51,
+      "path": "config.json",
+      "sha256": "bae5e90bd7102fd5ec58f8ba321f8d48bb33ce68ac45a588605a01353b64cb9e"
+    },
+    "control_ids": [],
+    "dataset_ref": {
+      "bytes": 228,
+      "dataset_id": "D-fixture",
+      "path": "data.json",
+      "sha256": "8322100ddbefc893637873bfedc88afadc2ebe0429ebba649fd517e750d1c9dc"
+    },
+    "dirty": false,
+    "env": {
+      "cuda": null,
+      "determinism_settings": {
+        "seed": 0
+      },
+      "driver": null,
+      "framework": "stdlib",
+      "framework_version": "stdlib",
+      "gpu_count": 0,
+      "gpu_model": null,
+      "lockfile_sha256": null,
+      "python": "3.12.2",
+      "resolved_env_sha256": null
+    },
+    "fold_id": "F0",
+    "group_id": "G1",
+    "hypothesis_refs": [
+      {
+        "hypothesis_id": "H1",
+        "hypothesis_version": "fixture-1"
+      }
+    ],
+    "method_id": "constant-fixture",
+    "platform": "local_fixture",
+    "problem_id": "fixture-one",
+    "protocol_ref": {
+      "bytes": 676,
+      "path": "protocol.json",
+      "protocol_id": "FIXTURE",
+      "sha256": "53192f294c9773a4a0e503f6f82d2b9bc847b2bc27cadf83f8f18ee1943c63c1",
+      "version": "1"
+    },
+    "repo": null,
+    "resume_checkpoint_ref": null,
+    "resumed_from": null,
+    "run_kind": "smoke",
+    "seed": 0,
+    "split_ref": {
+      "bytes": 151,
+      "path": "split.json",
+      "sha256": "2e38b4b9e0e6e88434d8a64fd92370397f05416e6e8b371657842e3142cfed3b",
+      "split_id": "S-fixture"
+    }
+  },
+  "scope": "portable local/posix bundle; not a target GPU certification",
+  "status": "pass"
+}

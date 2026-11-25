@@ -1,0 +1,97 @@
+{
+  "actor": "training_entry",
+  "artifacts": [],
+  "baseline_id": null,
+  "budget_condition": "fixture-only",
+  "change_reason": null,
+  "commit": null,
+  "config_ref": {
+    "bytes": 51,
+    "path": "config.json",
+    "sha256": "bae5e90bd7102fd5ec58f8ba321f8d48bb33ce68ac45a588605a01353b64cb9e"
+  },
+  "control_ids": [],
+  "dataset_ref": {
+    "bytes": 228,
+    "dataset_id": "D-fixture",
+    "path": "data.json",
+    "sha256": "8322100ddbefc893637873bfedc88afadc2ebe0429ebba649fd517e750d1c9dc"
+  },
+  "dirty": false,
+  "ended_at": null,
+  "env": {
+    "cuda": null,
+    "determinism_settings": {
+      "seed": 0
+    },
+    "driver": null,
+    "framework": "stdlib",
+    "framework_version": "stdlib",
+    "gpu_count": 0,
+    "gpu_model": null,
+    "lockfile_sha256": null,
+    "python": "3.12.2",
+    "resolved_env_sha256": null
+  },
+  "evidence_refs": [],
+  "failure_reason": null,
+  "fold_id": "F0",
+  "gpu_hours": null,
+  "group_id": "G1",
+  "hypothesis_refs": [
+    {
+      "hypothesis_id": "H1",
+      "hypothesis_version": "fixture-1"
+    }
+  ],
+  "last_heartbeat_at": "2026-11-25T02:09:35.527938Z",
+  "method_id": "constant-fixture",
+  "metrics": null,
+  "missing_reasons": {
+    "baseline_id": "not_applicable",
+    "commit": "not_applicable",
+    "env.cuda": "not_applicable",
+    "env.driver": "not_applicable",
+    "env.gpu_model": "not_applicable",
+    "env.lockfile_sha256": "not_applicable",
+    "env.resolved_env_sha256": "not_applicable",
+    "gpu_hours": "not_yet_available",
+    "repo": "not_applicable"
+  },
+  "note": "",
+  "parent_record_sha256": "b69e6eb74d191e90712b5c7eb2885884dc8d4806789a20978913311a330b24b0",
+  "platform": "local_fixture",
+  "prediction_freeze_ref": null,
+  "predictions": null,
+  "preflight_report_ref": {
+    "path": "preflight/4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b.json",
+    "sha256": "99a08d1b1e6e67f6362775c09fe9a6b6932b4ce767578c3ec2ecd86cae7f0df4"
+  },
+  "problem_id": "fixture-one",
+  "protocol_ref": {
+    "bytes": 676,
+    "path": "protocol.json",
+    "protocol_id": "FIXTURE",
+    "sha256": "53192f294c9773a4a0e503f6f82d2b9bc847b2bc27cadf83f8f18ee1943c63c1",
+    "version": "1"
+  },
+  "recorded_at": "2026-11-25T02:09:35.720342Z",
+  "repo": null,
+  "resource_accounting_status": "unknown",
+  "resume_checkpoint_ref": null,
+  "resumed_from": null,
+  "revision": 1,
+  "revision_kind": "progress",
+  "run_id": "4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b",
+  "run_kind": "smoke",
+  "schema_version": "run.v0.2",
+  "seed": 0,
+  "split_ref": {
+    "bytes": 151,
+    "path": "split.json",
+    "sha256": "2e38b4b9e0e6e88434d8a64fd92370397f05416e6e8b371657842e3142cfed3b",
+    "split_id": "S-fixture"
+  },
+  "started_at": "2026-11-25T02:09:35.527938Z",
+  "status": "running"
+}

@@ -1,0 +1,20 @@
+{
+  "schema_version": "research-vocabulary.v1",
+  "run_kind": ["smoke", "exploratory", "confirmatory"],
+  "status": ["running", "done", "failed", "interrupted"],
+  "platform": ["server", "colab", "local_fixture"],
+  "missing_reasons": ["not_reported", "not_checked", "not_applicable", "not_yet_available"],
+  "actor": ["training_entry", "coordinator"],
+  "resource_accounting_status": ["measured", "estimated", "unknown", "not_applicable"],
+  "eval_set_kind": ["dev", "final_test"],
+  "exposure_kind": ["prior_test_exposure", "run_access"],
+  "split_intended_use": ["point_training", "point_evaluation", "source_pool"],
+  "split_eligibility_decision": ["include", "pending", "exclude"],
+  "split_role": {
+    "base_fit": ["point_training", "fit"],
+    "rule_dev": ["point_training", "develop"],
+    "rule_eval": ["point_evaluation", "evaluate"],
+    "heldout_eval": ["point_evaluation", "sealed"],
+    "excluded": ["none", "none"]
+  }
+}

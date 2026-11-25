@@ -1,0 +1,74 @@
+{
+  "schema_version": "stage-requirements.v1",
+  "G1": [
+    "V19.state",
+    "V20.protected",
+    "V21.sources",
+    "V13.compare",
+    "V15.ledger_refs",
+    "V31.reports",
+    "V30.syntax"
+  ],
+  "G2": [
+    "G1",
+    "runtime_evidence"
+  ],
+  "G3": {
+    "prepare": [
+      "G2",
+      "G3.topic_inputs",
+      "eligibility_preview_integrity",
+      "scientific_decisions",
+      "V11.formal_split",
+      "frozen_protocol",
+      "target_environment",
+      "implemented_scientific_validators"
+    ],
+    "result": [
+      "prepare",
+      "completed_confirmatory_runs",
+      "analysis_admission"
+    ]
+  },
+  "required_decisions": [
+    "target_offtarget",
+    "endpoint",
+    "source_selection",
+    "construct_comparability",
+    "series_rule",
+    "information_availability",
+    "effect_threshold",
+    "harm_threshold",
+    "precision_target",
+    "seed_plan",
+    "resampling_plan",
+    "multiplicity_policy",
+    "label_budget",
+    "compute_budget",
+    "training_repository",
+    "persistent_storage",
+    "prior_test_exposure"
+  ],
+  "formal_execution_enabled": false,
+  "formal_use_allowed": false,
+  "freeze_validation": {
+    "scope": "本机 POSIX、两个独立合成课题；真实研究执行仍关闭",
+    "contract": "规范/W10b_冻结与测试访问_v1.md",
+    "evidence": "测试/verify_freeze.py",
+    "implemented": [
+      "W10b/S23：freeze.v1 绑定课题、协议、上游字节、假设与阈值登记及外置人工确认",
+      "V07：预检和同步独立复核 final_test 开始时间；G3 准备检查当前课题冻结",
+      "test-exposure.v1：按题保留预登记和运行访问，按快照、划分及评价集跨版本查询",
+      "S12/V29：预检、同步双端运行包静态凭据扫描",
+      "S29：运行、评估、暴露及候选划分校验采用集中词表"
+    ]
+  },
+  "unimplemented": [
+    "V11真实快照、真实角色与联合隔离验收；严格固定面板候选检查器已实现，不能替代正式验收",
+    "真实课题的用户确认、真实阈值登记与冻结证据",
+    "V16/V17正式基线与对照验收",
+    "V26成员与实耗预算",
+    "V27/V28统计及分析准入",
+    "目标环境的真实测试访问、授权和执行证据"
+  ]
+}

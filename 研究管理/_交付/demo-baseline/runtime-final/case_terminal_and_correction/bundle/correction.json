@@ -1,0 +1,13 @@
+{
+  "actor": "coordinator",
+  "change_reason": "typo",
+  "evidence_refs": [
+    {
+      "bytes": 21,
+      "path": "correction-evidence.txt",
+      "sha256": "d2453aec26f4e499c192523945a8f7c97a79c61f70b0fa632130f917eec73673"
+    }
+  ],
+  "note": "clarified",
+  "revision_kind": "metadata_correction"
+}

@@ -1,0 +1,2 @@
+prediction_id,run_id,fold_id,measurement_ids,compound_id,construct_ids,group_id,role,endpoint,prediction,target_ref,target_status
+P1,b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda,F0,["M1"],C1,["T1"],S1,heldout_eval,fixture,0.0,M1,point

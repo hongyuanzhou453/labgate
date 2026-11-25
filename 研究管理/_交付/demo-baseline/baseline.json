@@ -1,0 +1,57 @@
+{
+  "captured_at": "2026-11-25T02:09:34.800987Z",
+  "files": [
+    {
+      "bytes": 270,
+      "path": "demo_data/demo_aliases.json",
+      "sha256": "33339a6831b2298d06556f8559825c99cf5585e05383a19520bc487d87c2d34c"
+    },
+    {
+      "bytes": 264,
+      "path": "demo_data/demo_audit_review.md",
+      "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0"
+    },
+    {
+      "bytes": 1942,
+      "path": "demo_data/demo_compare.tsv",
+      "sha256": "8cca972ee09277e696d70bba8c2f6c03b698979b5fb286d2f95d35f46af2b08c"
+    },
+    {
+      "bytes": 522,
+      "path": "demo_data/demo_edges.csv",
+      "sha256": "314b0750dc3b100c945d2b5b81f499818770202fb3a677edbdd73fa962902cb0"
+    },
+    {
+      "bytes": 4928,
+      "path": "demo_data/demo_ledger.csv",
+      "sha256": "a7c1cc802d232e88f0b09f57b8e2a2d5ef2b0f0858252ea302b5eff244008673"
+    },
+    {
+      "bytes": 1511,
+      "path": "demo_data/demo_panel_audit.json",
+      "sha256": "871a89af0dfd0080cf9bf3399b521a80c488298f40687aa4eb2a9b27168d0f9d"
+    },
+    {
+      "bytes": 1051,
+      "path": "研究管理/来源映射.json",
+      "sha256": "53cc9bb44bd61263284e60839a8416d0b393406f093768bb7d3e4119a4f98ac7"
+    },
+    {
+      "bytes": 842,
+      "path": "研究管理/规范/接入映射.json",
+      "sha256": "922a16e4ab8d128aca5ec6bc74d06033347fe749bf1495edca703972e2af87f1"
+    },
+    {
+      "bytes": 937,
+      "path": "研究管理/规范/词表.json",
+      "sha256": "3f66470fe09cc77831c1afabffffe56ae802831050ff1d481ecb43953e75e065"
+    },
+    {
+      "bytes": 2239,
+      "path": "研究管理/规范/阶段要求.json",
+      "sha256": "9a6fbda3cd34d28b7d6e240c4c11598e684e3f18c227648e46c41a7001e50849"
+    }
+  ],
+  "schema_version": "protected-inputs.v1",
+  "scope": "登记来源与核心规范词表的相对路径内容快照；不依赖本机绝对路径"
+}

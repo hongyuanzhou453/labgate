@@ -1,0 +1,13 @@
+problem_id,eligibility_id,measurement_id,intended_use,decision,reason_codes,evidence_refs,review_status,missing_reason
+fixture,E-fixture,M0,diagnostic,include,"[""audit_trace_only""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":2}]",diagnostic_only,
+fixture,E-fixture,M0,point_training,pending,"[""endpoint_candidate_only"",""research_choices_unconfirmed""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":2}]",diagnostic_only,not_checked
+fixture,E-fixture,M1,diagnostic,include,"[""audit_trace_only""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":3}]",diagnostic_only,
+fixture,E-fixture,M1,point_training,exclude,"[""not_strict_verified_kd_point""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":3}]",diagnostic_only,
+fixture,E-fixture,M2,diagnostic,include,"[""audit_trace_only""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":4}]",diagnostic_only,
+fixture,E-fixture,M2,point_training,exclude,"[""not_strict_verified_kd_point""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":4}]",diagnostic_only,
+fixture,E-fixture,M3,diagnostic,include,"[""audit_trace_only""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":5}]",diagnostic_only,
+fixture,E-fixture,M3,point_training,exclude,"[""not_strict_verified_kd_point""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":5}]",diagnostic_only,
+fixture,E-fixture,M4,diagnostic,include,"[""audit_trace_only""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":6}]",diagnostic_only,
+fixture,E-fixture,M4,point_training,exclude,"[""not_strict_verified_kd_point""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":6}]",diagnostic_only,
+fixture,E-fixture,M5,diagnostic,include,"[""audit_trace_only""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":7}]",diagnostic_only,
+fixture,E-fixture,M5,point_training,exclude,"[""not_strict_verified_kd_point""]","[{""source_id"":""SRC-AUDIT-measurements"",""line"":7}]",diagnostic_only,

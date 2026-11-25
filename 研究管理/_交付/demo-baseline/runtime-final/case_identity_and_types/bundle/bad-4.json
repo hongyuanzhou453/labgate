@@ -1,0 +1,8 @@
+{
+  "config_ref": {
+    "bytes": 228,
+    "path": "data.json",
+    "sha256": "8322100ddbefc893637873bfedc88afadc2ebe0429ebba649fd517e750d1c9dc"
+  },
+  "revision_kind": "progress"
+}

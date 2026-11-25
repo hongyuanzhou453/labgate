@@ -1,0 +1,11 @@
+{
+  "dataset_id": "D-fixture",
+  "files": [
+    {
+      "bytes": 35,
+      "path": "data/labels.csv",
+      "sha256": "f6f55e542f5a13602cf7ac5ac2d92f548cc312d4653eb80e50fab8c9a4a2bd64"
+    }
+  ],
+  "problem_id": "fixture-two"
+}

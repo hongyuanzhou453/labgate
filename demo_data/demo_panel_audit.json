@@ -1,0 +1,66 @@
+{
+  "schema_version": "demo-panel-audit.v1",
+  "note": "Purely synthetic demonstration numbers for LabGate offline dashboard.",
+  "panels": [
+    {
+      "label": "SYN-KinA / KinB Ki",
+      "bilateral": 420,
+      "docs": 18,
+      "murcko_total": 185,
+      "murcko_ge2": 64,
+      "murcko_ge3": 36,
+      "donor_non_overlap": 240,
+      "donor_docs": 12
+    },
+    {
+      "label": "SYN-RecC / RecD Ki",
+      "bilateral": 140,
+      "docs": 7,
+      "murcko_total": 52,
+      "murcko_ge2": 21,
+      "murcko_ge3": 12,
+      "donor_non_overlap": 115,
+      "donor_docs": 6
+    },
+    {
+      "label": "SYN-CpxE / CpxF Ki",
+      "bilateral": 76,
+      "docs": 4,
+      "murcko_total": 28,
+      "murcko_ge2": 14,
+      "murcko_ge3": 9,
+      "donor_non_overlap": 62,
+      "donor_docs": 4
+    },
+    {
+      "label": "SYN-BroadG / H Kd",
+      "bilateral": 84,
+      "docs": 1,
+      "murcko_total": 72,
+      "murcko_ge2": 3,
+      "murcko_ge3": 1,
+      "donor_non_overlap": null,
+      "donor_docs": null
+    },
+    {
+      "label": "SYN-BroadJ / K Kd",
+      "bilateral": 68,
+      "docs": 1,
+      "murcko_total": 61,
+      "murcko_ge2": 2,
+      "murcko_ge3": 0,
+      "donor_non_overlap": null,
+      "donor_docs": null
+    }
+  ],
+  "waterfall": {
+    "raw_measurements": 1200,
+    "censored_gt_lt": -198,
+    "exact_measurements": 1002,
+    "multi_assay_dedup": -242,
+    "unilateral_excluded": -340,
+    "bilateral_ligands": 420,
+    "patent_only_excluded": -280,
+    "journal_bilateral": 140
+  }
+}

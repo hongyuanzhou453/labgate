@@ -1,0 +1,28 @@
+{
+  "design_ref": {
+    "bytes": 32,
+    "path": "研究管理/_交付/demo-baseline/runtime-final/case_eligibility_semantics/bundle/design.json",
+    "sha256": "e855bc576d1a90cb9c856b6599cb12335c2d2f0cef28321a93543355ee931954"
+  },
+  "eligibility_id": "E-fixture",
+  "formal_use_allowed": false,
+  "intended_uses": [
+    "diagnostic",
+    "point_training"
+  ],
+  "measurements_ref": {
+    "bytes": 642,
+    "path": "研究管理/_交付/demo-baseline/runtime-final/case_eligibility_semantics/bundle/source.csv",
+    "sha256": "d6ccb8b6d4cca284053b1b214e68d336ef47f76d96f48e123bb89ee99cbaf727"
+  },
+  "mode": "diagnostic_only",
+  "problem_id": "fixture",
+  "schema_version": "eligibility-preview.v1",
+  "source_snapshot_refs": [
+    {
+      "bytes": 642,
+      "path": "研究管理/_交付/demo-baseline/runtime-final/case_eligibility_semantics/bundle/source.csv",
+      "sha256": "d6ccb8b6d4cca284053b1b214e68d336ef47f76d96f48e123bb89ee99cbaf727"
+    }
+  ]
+}

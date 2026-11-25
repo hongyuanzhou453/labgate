@@ -1,0 +1,7 @@
+compound_id,construct_id,is_strict_clean_kd_point,is_verified_kd_point,layer_id,lineage_id,lower_strict,measurement_id,measurement_type,pkd_lower,pkd_point,pkd_upper,source_locator,upper_strict,value_status
+,,True,True,,,False,M0,KINOMEscan_Kd,8.0,8.0,8.0,,False,point_estimate
+,,False,False,,,False,M1,ITC_Kd,,,4.0,,False,upper_bound_pkd
+,,False,False,,,False,M2,KINOMEscan_Kd_or_imputed,,,,,False,downstream_imputed
+,,False,False,,,False,M3,KINOMEscan_KdELECT,,,,,False,unverified_meaning
+,,False,False,,,False,M4,AlphaLISA_pIC50,,,,,False,point_estimate
+,,False,True,,,False,M5,KINOMEscan_Kd,4.0,4.0,4.0,,False,point_estimate_high_kd_tail

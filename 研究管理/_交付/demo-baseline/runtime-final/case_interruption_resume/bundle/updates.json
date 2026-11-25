@@ -1,0 +1,24 @@
+{
+  "actor": "coordinator",
+  "artifacts": [
+    {
+      "availability": "local",
+      "bytes": 20,
+      "kind": "checkpoint",
+      "path": "checkpoint.bin",
+      "sha256": "8db7031bdf074c8b6e7beb67c1eae5a3d264c108db72df82872b0341d2a086e8"
+    }
+  ],
+  "change_reason": "scheduler confirmed loss",
+  "ended_at": "2026-11-25T02:09:36.877186Z",
+  "evidence_refs": [
+    {
+      "bytes": 21,
+      "path": "scheduler.log",
+      "sha256": "baa5ad8c24932a9ba73255419397ca589eebdb4e93aceea6bb2b134a3cf0a108"
+    }
+  ],
+  "failure_reason": "fixture loss of worker",
+  "revision_kind": "interrupt",
+  "status": "interrupted"
+}

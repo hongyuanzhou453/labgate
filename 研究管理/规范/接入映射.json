@@ -1,0 +1,32 @@
+{
+  "schema_version": "source-mapping.v1",
+  "compare_source": "SRC-COMPARE",
+  "edges_source": "SRC-EDGES",
+  "compare_columns": [
+    "row_id",
+    "paper_id",
+    "任务",
+    "使用时已知信息",
+    "方法改变了什么",
+    "数据与标签预算",
+    "划分与评价",
+    "排除的替代解释",
+    "相对本问题",
+    "核验"
+  ],
+  "row_type_rule": {
+    "field": "paper_id",
+    "project_value": "项目参照",
+    "project_row_type": "project_reference",
+    "otherwise": "literature"
+  },
+  "status_heading_map": {
+    "已确认决定": "决策记录",
+    "待用户决定": "待决定"
+  },
+  "notes": [
+    "逐格核验范围沿用原表；不新增性能结论",
+    "关系审核不因来源文件存在而自动通过",
+    "未复制比较表或脉络边；接口返回原始行与派生row_type"
+  ]
+}

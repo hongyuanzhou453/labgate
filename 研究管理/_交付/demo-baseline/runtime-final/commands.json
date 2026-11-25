@@ -1,0 +1,1245 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_actual_file_tamper/bundle",
+      "--experiment",
+      "<output>/case_actual_file_tamper/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"d69a12eb-623b-4ba9-85af-1518097753a6\", \"record\": \"records/d69a12eb-623b-4ba9-85af-1518097753a6/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "preflight",
+      "--bundle",
+      "<output>/case_actual_file_tamper/bundle",
+      "--experiment",
+      "<output>/case_actual_file_tamper/bundle/experiment.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"file hash mismatch: data/labels.csv\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_actual_file_tamper/bundle",
+      "--store",
+      "<output>/case_actual_file_tamper/store",
+      "--record",
+      "<output>/case_actual_file_tamper/bundle/records/d69a12eb-623b-4ba9-85af-1518097753a6/0.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"file hash mismatch: data/labels.csv\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_concurrency/one",
+      "--experiment",
+      "<output>/case_concurrency/one/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"722ff250-6bc4-41f3-865c-54135284a15f\", \"record\": \"records/722ff250-6bc4-41f3-865c-54135284a15f/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_concurrency/two",
+      "--experiment",
+      "<output>/case_concurrency/two/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"f1a2ac37-0e33-4365-bfb4-798391cd4c25\", \"record\": \"records/f1a2ac37-0e33-4365-bfb4-798391cd4c25/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_concurrency/one",
+      "--store",
+      "<output>/case_concurrency/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"722ff250-6bc4-41f3-865c-54135284a15f\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_concurrency/two",
+      "--store",
+      "<output>/case_concurrency/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"f1a2ac37-0e33-4365-bfb4-798391cd4c25\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_concurrency/one",
+      "--store",
+      "<output>/case_concurrency/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"722ff250-6bc4-41f3-865c-54135284a15f\", \"revision\": 0, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_concurrency/two",
+      "--store",
+      "<output>/case_concurrency/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"f1a2ac37-0e33-4365-bfb4-798391cd4c25\", \"revision\": 0, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_concurrent_same_revision_conflict/bundle",
+      "--experiment",
+      "<output>/case_concurrent_same_revision_conflict/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"27e13da2-1e6a-4c56-8bf6-ef9b4bcd8be3\", \"record\": \"records/27e13da2-1e6a-4c56-8bf6-ef9b4bcd8be3/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_concurrent_same_revision_conflict/bundle",
+      "--store",
+      "<output>/case_concurrent_same_revision_conflict/store",
+      "--record",
+      "<output>/case_concurrent_same_revision_conflict/bundle/records/27e13da2-1e6a-4c56-8bf6-ef9b4bcd8be3/0.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"same revision different hash\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_concurrent_same_revision_conflict/bundle",
+      "--store",
+      "<output>/case_concurrent_same_revision_conflict/store",
+      "--record",
+      "<output>/case_concurrent_same_revision_conflict/bundle/other.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"27e13da2-1e6a-4c56-8bf6-ef9b4bcd8be3\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_conflict_and_gap/bundle",
+      "--experiment",
+      "<output>/case_conflict_and_gap/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b\", \"record\": \"records/4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_conflict_and_gap/bundle",
+      "--store",
+      "<output>/case_conflict_and_gap/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_conflict_and_gap/bundle",
+      "--store",
+      "<output>/case_conflict_and_gap/store",
+      "--record",
+      "<output>/case_conflict_and_gap/bundle/conflict.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"same revision different hash\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_conflict_and_gap/bundle",
+      "--previous",
+      "<output>/case_conflict_and_gap/bundle/records/4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b/0.json",
+      "--updates",
+      "<output>/case_conflict_and_gap/bundle/progress.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_conflict_and_gap/bundle",
+      "--store",
+      "<output>/case_conflict_and_gap/missing-parent",
+      "--record",
+      "<output>/case_conflict_and_gap/bundle/records/4b0bd140-13d4-4c67-a0d9-4ac5da6c6c8b/1.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"first revision must be zero without parent\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_dry_run_no_write/bundle",
+      "--experiment",
+      "<output>/case_dry_run_no_write/bundle/experiment.json",
+      "--dry-run"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": true, \"run_id\": \"62617858-f852-4cc9-b040-097c9bfeb1f0\", \"record\": \"records/62617858-f852-4cc9-b040-097c9bfeb1f0/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_dry_run_no_write/bundle",
+      "--experiment",
+      "<output>/case_dry_run_no_write/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"b22f5b52-0c87-483b-9e44-d3d690640175\", \"record\": \"records/b22f5b52-0c87-483b-9e44-d3d690640175/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_dry_run_no_write/bundle",
+      "--store",
+      "<output>/case_dry_run_no_write/absent-store",
+      "--dry-run"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": true, \"actions\": [{\"run_id\": \"b22f5b52-0c87-483b-9e44-d3d690640175\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_dry_run_no_write/bundle",
+      "--previous",
+      "<output>/case_dry_run_no_write/bundle/records/b22f5b52-0c87-483b-9e44-d3d690640175/0.json",
+      "--updates",
+      "<output>/case_dry_run_no_write/bundle/progress.json",
+      "--dry-run"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": true, \"record\": \"records/b22f5b52-0c87-483b-9e44-d3d690640175/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_foreign_keys/bundle",
+      "--experiment",
+      "<output>/case_foreign_keys/bundle/hypothesis.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"hypothesis/version not declared in protocol\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_foreign_keys/bundle",
+      "--experiment",
+      "<output>/case_foreign_keys/bundle/group.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"method/group not declared in protocol\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_formal_admission_closed/bundle",
+      "--experiment",
+      "<output>/case_formal_admission_closed/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"fd4d8283-700b-4ff2-8f09-3bc42d07f084\", \"record\": \"records/fd4d8283-700b-4ff2-8f09-3bc42d07f084/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_formal_admission_closed/bundle",
+      "--previous",
+      "<output>/case_formal_admission_closed/bundle/records/fd4d8283-700b-4ff2-8f09-3bc42d07f084/0.json",
+      "--updates",
+      "<output>/case_formal_admission_closed/bundle/updates.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/fd4d8283-700b-4ff2-8f09-3bc42d07f084/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_formal_admission_closed/bundle",
+      "--experiment",
+      "<output>/case_formal_admission_closed/bundle/confirmatory.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"confirmatory execution not enabled: G3 scientific approvals and validators required\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--experiment",
+      "<output>/case_identity_and_types/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"276c8724-2fab-41f8-8206-f6cb03608015\", \"record\": \"records/276c8724-2fab-41f8-8206-f6cb03608015/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-0.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"scientific identity changed: seed\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-1.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"integer seed required\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-2.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"scientific identity changed: commit\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-3.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"boolean dirty required\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-4.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"scientific identity changed: config_ref\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-5.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"local_fixture only allows smoke\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-6.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"invalid identifier\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_identity_and_types/bundle",
+      "--previous",
+      "<output>/case_identity_and_types/bundle/records/276c8724-2fab-41f8-8206-f6cb03608015/0.json",
+      "--updates",
+      "<output>/case_identity_and_types/bundle/bad-7.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"scientific identity changed: problem_id\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_interruption_resume/bundle",
+      "--experiment",
+      "<output>/case_interruption_resume/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"ece614fc-1d1a-498f-aa18-f974881e960d\", \"record\": \"records/ece614fc-1d1a-498f-aa18-f974881e960d/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_interruption_resume/bundle",
+      "--previous",
+      "<output>/case_interruption_resume/bundle/records/ece614fc-1d1a-498f-aa18-f974881e960d/0.json",
+      "--updates",
+      "<output>/case_interruption_resume/bundle/no-evidence.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"interruption needs explicit evidence\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_interruption_resume/bundle",
+      "--previous",
+      "<output>/case_interruption_resume/bundle/records/ece614fc-1d1a-498f-aa18-f974881e960d/0.json",
+      "--updates",
+      "<output>/case_interruption_resume/bundle/updates.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/ece614fc-1d1a-498f-aa18-f974881e960d/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_interruption_resume/bundle",
+      "--store",
+      "<output>/case_interruption_resume/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"ece614fc-1d1a-498f-aa18-f974881e960d\", \"revision\": 0, \"action\": \"accepted\"}, {\"run_id\": \"ece614fc-1d1a-498f-aa18-f974881e960d\", \"revision\": 1, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_interruption_resume/bundle",
+      "--experiment",
+      "<output>/case_interruption_resume/bundle/resume.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"bf97d006-b881-4f42-8e16-238ec361002c\", \"record\": \"records/bf97d006-b881-4f42-8e16-238ec361002c/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_interruption_resume/bundle",
+      "--store",
+      "<output>/case_interruption_resume/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"bf97d006-b881-4f42-8e16-238ec361002c\", \"revision\": 0, \"action\": \"accepted\"}, {\"run_id\": \"ece614fc-1d1a-498f-aa18-f974881e960d\", \"revision\": 0, \"action\": \"noop\"}, {\"run_id\": \"ece614fc-1d1a-498f-aa18-f974881e960d\", \"revision\": 1, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_json_and_binding/bundle",
+      "--experiment",
+      "<output>/case_json_and_binding/bundle/nan.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"non-finite JSON constant: NaN\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_json_and_binding/bundle",
+      "--experiment",
+      "<output>/case_json_and_binding/bundle/mismatch.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"configuration identity differs\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--experiment",
+      "<output>/case_lifecycle_idempotence/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"record\": \"records/06b57f3f-2acc-49f4-8959-e33557e170d9/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--store",
+      "<output>/case_lifecycle_idempotence/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--previous",
+      "<output>/case_lifecycle_idempotence/bundle/records/06b57f3f-2acc-49f4-8959-e33557e170d9/0.json",
+      "--updates",
+      "<output>/case_lifecycle_idempotence/bundle/progress.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/06b57f3f-2acc-49f4-8959-e33557e170d9/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--previous",
+      "<output>/case_lifecycle_idempotence/bundle/records/06b57f3f-2acc-49f4-8959-e33557e170d9/1.json",
+      "--updates",
+      "<output>/case_lifecycle_idempotence/bundle/updates.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/06b57f3f-2acc-49f4-8959-e33557e170d9/2.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--store",
+      "<output>/case_lifecycle_idempotence/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 0, \"action\": \"noop\"}, {\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 1, \"action\": \"accepted\"}, {\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 2, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--store",
+      "<output>/case_lifecycle_idempotence/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 0, \"action\": \"noop\"}, {\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 1, \"action\": \"noop\"}, {\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 2, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_lifecycle_idempotence/bundle",
+      "--store",
+      "<output>/case_lifecycle_idempotence/store",
+      "--record",
+      "<output>/case_lifecycle_idempotence/bundle/records/06b57f3f-2acc-49f4-8959-e33557e170d9/0.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"06b57f3f-2acc-49f4-8959-e33557e170d9\", \"revision\": 0, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_path_escape/bundle",
+      "--experiment",
+      "<output>/case_path_escape/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"ab99bc88-f97c-435c-82c4-1767df75b635\", \"record\": \"records/ab99bc88-f97c-435c-82c4-1767df75b635/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_path_escape/bundle",
+      "--store",
+      "<output>/case_path_escape/store1",
+      "--record",
+      "<output>/case_path_escape/bundle/traversal.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"absolute/traversal path rejected\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_path_escape/bundle",
+      "--store",
+      "<output>/case_path_escape/store2",
+      "--record",
+      "<output>/case_path_escape/bundle/symlink.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"V29 bundle contains a link or special file\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_rebuild_tamper/bundle",
+      "--experiment",
+      "<output>/case_rebuild_tamper/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"c3ca48c4-fc22-4027-bfb6-e29e43cad883\", \"record\": \"records/c3ca48c4-fc22-4027-bfb6-e29e43cad883/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_rebuild_tamper/bundle",
+      "--store",
+      "<output>/case_rebuild_tamper/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"c3ca48c4-fc22-4027-bfb6-e29e43cad883\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_recovery_windows/prepared",
+      "--experiment",
+      "<output>/case_recovery_windows/prepared/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"c214e2a8-ca2e-4d0d-bfb8-1cadb7d4a1dd\", \"record\": \"records/c214e2a8-ca2e-4d0d-bfb8-1cadb7d4a1dd/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-c",
+      "import sys;sys.path.insert(0,sys.argv[1]);from sync_runs import ingest;ingest(sys.argv[2],sys.argv[3],fault=sys.argv[4])",
+      "<repo>/研究管理/工具",
+      "<output>/case_recovery_windows/prepared",
+      "<output>/case_recovery_windows/store-prepared",
+      "prepared"
+    ],
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<repo>/研究管理/工具/sync_runs.py\", line 126, in ingest\n    raise ValueError('injected crash after prepared')\nValueError: injected crash after prepared\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_recovery_windows/prepared",
+      "--store",
+      "<output>/case_recovery_windows/store-prepared"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"c214e2a8-ca2e-4d0d-bfb8-1cadb7d4a1dd\", \"revision\": 0, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_recovery_windows/prepared",
+      "--store",
+      "<output>/case_recovery_windows/store-prepared"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"c214e2a8-ca2e-4d0d-bfb8-1cadb7d4a1dd\", \"revision\": 0, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_recovery_windows/files",
+      "--experiment",
+      "<output>/case_recovery_windows/files/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"c99908d0-b8dd-4710-8ac2-ae13c0ca1842\", \"record\": \"records/c99908d0-b8dd-4710-8ac2-ae13c0ca1842/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-c",
+      "import sys;sys.path.insert(0,sys.argv[1]);from sync_runs import ingest;ingest(sys.argv[2],sys.argv[3],fault=sys.argv[4])",
+      "<repo>/研究管理/工具",
+      "<output>/case_recovery_windows/files",
+      "<output>/case_recovery_windows/store-files",
+      "files"
+    ],
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<repo>/研究管理/工具/sync_runs.py\", line 139, in ingest\n    raise ValueError('injected crash after durable files')\nValueError: injected crash after durable files\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_recovery_windows/files",
+      "--store",
+      "<output>/case_recovery_windows/store-files"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"c99908d0-b8dd-4710-8ac2-ae13c0ca1842\", \"revision\": 0, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_recovery_windows/committed",
+      "--experiment",
+      "<output>/case_recovery_windows/committed/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"e85e8ac9-17da-40bd-b3d6-9c53b7e36b99\", \"record\": \"records/e85e8ac9-17da-40bd-b3d6-9c53b7e36b99/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-c",
+      "import sys;sys.path.insert(0,sys.argv[1]);from sync_runs import ingest;ingest(sys.argv[2],sys.argv[3],fault=sys.argv[4])",
+      "<repo>/研究管理/工具",
+      "<output>/case_recovery_windows/committed",
+      "<output>/case_recovery_windows/store-committed",
+      "committed"
+    ],
+    "returncode": 1,
+    "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<repo>/研究管理/工具/sync_runs.py\", line 145, in ingest\n    raise ValueError('injected crash before index')\nValueError: injected crash before index\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_recovery_windows/committed",
+      "--store",
+      "<output>/case_recovery_windows/store-committed"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"e85e8ac9-17da-40bd-b3d6-9c53b7e36b99\", \"revision\": 0, \"action\": \"noop\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_resource_and_result_types/bundle",
+      "--experiment",
+      "<output>/case_resource_and_result_types/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"94862aa1-a730-4760-b700-5b4af69a906b\", \"record\": \"records/94862aa1-a730-4760-b700-5b4af69a906b/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_resource_and_result_types/bundle",
+      "--previous",
+      "<output>/case_resource_and_result_types/bundle/records/94862aa1-a730-4760-b700-5b4af69a906b/0.json",
+      "--updates",
+      "<output>/case_resource_and_result_types/bundle/resource.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/94862aa1-a730-4760-b700-5b4af69a906b/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_resource_and_result_types/bundle",
+      "--previous",
+      "<output>/case_resource_and_result_types/bundle/records/94862aa1-a730-4760-b700-5b4af69a906b/1.json",
+      "--updates",
+      "<output>/case_resource_and_result_types/bundle/clear-resource-0.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"cumulative resource count decreased or cleared\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_resource_and_result_types/bundle",
+      "--previous",
+      "<output>/case_resource_and_result_types/bundle/records/94862aa1-a730-4760-b700-5b4af69a906b/1.json",
+      "--updates",
+      "<output>/case_resource_and_result_types/bundle/clear-resource-1.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"negative gpu hours\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_resource_and_result_types/bundle",
+      "--previous",
+      "<output>/case_resource_and_result_types/bundle/records/94862aa1-a730-4760-b700-5b4af69a906b/1.json",
+      "--updates",
+      "<output>/case_resource_and_result_types/bundle/clear-resource-2.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"cumulative resource count decreased or cleared\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_resource_and_result_types/bundle",
+      "--previous",
+      "<output>/case_resource_and_result_types/bundle/records/94862aa1-a730-4760-b700-5b4af69a906b/1.json",
+      "--updates",
+      "<output>/case_resource_and_result_types/bundle/invalid-done.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"finite numeric value required\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_running_failure_and_nulls/bundle",
+      "--experiment",
+      "<output>/case_running_failure_and_nulls/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"65ff7b2f-f61a-4756-b2bb-fc26700fbe04\", \"record\": \"records/65ff7b2f-f61a-4756-b2bb-fc26700fbe04/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_running_failure_and_nulls/bundle",
+      "--previous",
+      "<output>/case_running_failure_and_nulls/bundle/records/65ff7b2f-f61a-4756-b2bb-fc26700fbe04/0.json",
+      "--updates",
+      "<output>/case_running_failure_and_nulls/bundle/no-reason.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"failure reason required\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_running_failure_and_nulls/bundle",
+      "--previous",
+      "<output>/case_running_failure_and_nulls/bundle/records/65ff7b2f-f61a-4756-b2bb-fc26700fbe04/0.json",
+      "--updates",
+      "<output>/case_running_failure_and_nulls/bundle/updates.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/65ff7b2f-f61a-4756-b2bb-fc26700fbe04/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/sync_runs.py",
+      "--input",
+      "<output>/case_running_failure_and_nulls/bundle",
+      "--store",
+      "<output>/case_running_failure_and_nulls/store"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"actions\": [{\"run_id\": \"65ff7b2f-f61a-4756-b2bb-fc26700fbe04\", \"revision\": 0, \"action\": \"accepted\"}, {\"run_id\": \"65ff7b2f-f61a-4756-b2bb-fc26700fbe04\", \"revision\": 1, \"action\": \"accepted\"}]}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "start",
+      "--bundle",
+      "<output>/case_terminal_and_correction/bundle",
+      "--experiment",
+      "<output>/case_terminal_and_correction/bundle/experiment.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"run_id\": \"b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda\", \"record\": \"records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/0.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "finish",
+      "--bundle",
+      "<output>/case_terminal_and_correction/bundle",
+      "--previous",
+      "<output>/case_terminal_and_correction/bundle/records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/0.json",
+      "--updates",
+      "<output>/case_terminal_and_correction/bundle/updates.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/1.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_terminal_and_correction/bundle",
+      "--previous",
+      "<output>/case_terminal_and_correction/bundle/records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/1.json",
+      "--updates",
+      "<output>/case_terminal_and_correction/bundle/reopen.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"terminal run cannot reopen\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_terminal_and_correction/bundle",
+      "--previous",
+      "<output>/case_terminal_and_correction/bundle/records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/1.json",
+      "--updates",
+      "<output>/case_terminal_and_correction/bundle/correction.json"
+    ],
+    "returncode": 0,
+    "stderr": "",
+    "stdout": "{\"status\": \"pass\", \"dry_run\": false, \"record\": \"records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/2.json\"}\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "<repo>/研究管理/工具/run_logger.py",
+      "progress",
+      "--bundle",
+      "<output>/case_terminal_and_correction/bundle",
+      "--previous",
+      "<output>/case_terminal_and_correction/bundle/records/b98d5e3e-6d27-4d1a-9d9f-551ab0d58bda/2.json",
+      "--updates",
+      "<output>/case_terminal_and_correction/bundle/metric-rewrite.json"
+    ],
+    "returncode": 1,
+    "stderr": "",
+    "stdout": "{\"status\": \"fail\", \"error\": \"terminal scientific contents cannot change\"}\n"
+  }
+]

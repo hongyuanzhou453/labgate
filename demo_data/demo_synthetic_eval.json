@@ -1,0 +1,35 @@
+{
+  "schema_version": "synthetic-eval-proto.v1",
+  "controls": [
+    {
+      "name": "positive_12_series (Heterogeneous Signal)",
+      "groups": 12,
+      "compounds": 96,
+      "delta_gain": "+0.3959",
+      "ci95": "[+0.3254, +0.4806]",
+      "harmed": "0/12 (Uni 6/12)",
+      "kind": "pass",
+      "warnings": "—"
+    },
+    {
+      "name": "negative_12_series_perm (Permutation Null)",
+      "groups": 12,
+      "compounds": 96,
+      "delta_gain": "+0.0335",
+      "ci95": "[-0.1686, +0.2533]",
+      "harmed": "6/12 (50% harmed)",
+      "kind": "risk",
+      "warnings": "CI crosses zero; negative transfer detected"
+    },
+    {
+      "name": "small_3_series_underpowered (Power Guard)",
+      "groups": 3,
+      "compounds": 30,
+      "delta_gain": "+0.3241",
+      "ci95": "[+0.3006, +0.3631]",
+      "harmed": "0/3",
+      "kind": "accent",
+      "warnings": "underpowered_series_count"
+    }
+  ]
+}

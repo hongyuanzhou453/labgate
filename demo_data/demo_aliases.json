@@ -1,0 +1,13 @@
+{
+  "schema_version": "source-aliases.v1",
+  "groups": [
+    {
+      "work_id": "W101",
+      "canonical_id": "L101",
+      "related_ids": [
+        "L109"
+      ],
+      "note": "Journal version (L101) and earlier preprint (L109) share canonical identity."
+    }
+  ]
+}

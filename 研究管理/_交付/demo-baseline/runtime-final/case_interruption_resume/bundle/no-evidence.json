@@ -1,0 +1,7 @@
+{
+  "actor": "coordinator",
+  "ended_at": "2026-11-25T02:09:36.877186Z",
+  "failure_reason": "fixture loss of worker",
+  "revision_kind": "interrupt",
+  "status": "interrupted"
+}

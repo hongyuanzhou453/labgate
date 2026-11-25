@@ -1,0 +1,32 @@
+{
+  "counts": {
+    "diagnostic:include": 6,
+    "point_training:exclude": 5,
+    "point_training:pending": 1
+  },
+  "formal_use_allowed": false,
+  "generator_ref": {
+    "bytes": 8026,
+    "path": "研究管理/工具/build_eligibility.py",
+    "sha256": "e49b596f9de94347b915f0b288998c11a098b2a85df7b60a89eb536549fc4c17"
+  },
+  "primary_key": [
+    "eligibility_id",
+    "measurement_id",
+    "intended_use"
+  ],
+  "rules_ref": {
+    "bytes": 961,
+    "path": "研究管理/_交付/demo-baseline/runtime-final/case_eligibility_semantics/bundle/rules.json",
+    "sha256": "f3d73929a455e12b378ae39b6983ab3861ef85155a42957d484cfcd979b312ce"
+  },
+  "schema_version": "eligibility-preview-manifest.v1",
+  "source_rows": 6,
+  "status": "pass",
+  "view_ref": {
+    "bytes": 1934,
+    "path": "研究管理/_交付/demo-baseline/runtime-final/case_eligibility_semantics/bundle/view/数据资格表.csv",
+    "sha256": "ae5bbcf34712864f9d35061f5d218a2a34c18be4783840c42b6fd9f42baa2d60"
+  },
+  "view_rows": 12
+}

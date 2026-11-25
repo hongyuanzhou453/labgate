@@ -1,0 +1,15 @@
+{
+  "ended_at": "2026-11-25T02:09:39.178143Z",
+  "metrics": {
+    "bytes": 145,
+    "path": "invalid-metrics.csv",
+    "sha256": "ba76e12acf22a2fc76028b2c54ee49cacfad44ae9b31ddaf409783a96f721c01"
+  },
+  "predictions": {
+    "bytes": 15,
+    "path": "invalid-predictions.csv",
+    "sha256": "332ed01b6a1e207666273c1c074ab58e5a867c1041d62c4400886a7c6f14ffcb"
+  },
+  "revision_kind": "finish",
+  "status": "done"
+}

@@ -1,0 +1,51 @@
+{
+  "committed_at": "2026-11-25T02:09:37.091097Z",
+  "input_files": [
+    {
+      "bytes": 20,
+      "path": "checkpoint.bin",
+      "sha256": "8db7031bdf074c8b6e7beb67c1eae5a3d264c108db72df82872b0341d2a086e8"
+    },
+    {
+      "bytes": 51,
+      "path": "config.json",
+      "sha256": "bae5e90bd7102fd5ec58f8ba321f8d48bb33ce68ac45a588605a01353b64cb9e"
+    },
+    {
+      "bytes": 228,
+      "path": "data.json",
+      "sha256": "8322100ddbefc893637873bfedc88afadc2ebe0429ebba649fd517e750d1c9dc"
+    },
+    {
+      "bytes": 35,
+      "path": "data/labels.csv",
+      "sha256": "f6f55e542f5a13602cf7ac5ac2d92f548cc312d4653eb80e50fab8c9a4a2bd64"
+    },
+    {
+      "bytes": 2764,
+      "path": "preflight/ece614fc-1d1a-498f-aa18-f974881e960d.json",
+      "sha256": "871756f18225739c3e2f75794bf4265a927b453e24892acffae73e26a9d4d3d4"
+    },
+    {
+      "bytes": 676,
+      "path": "protocol.json",
+      "sha256": "53192f294c9773a4a0e503f6f82d2b9bc847b2bc27cadf83f8f18ee1943c63c1"
+    },
+    {
+      "bytes": 21,
+      "path": "scheduler.log",
+      "sha256": "baa5ad8c24932a9ba73255419397ca589eebdb4e93aceea6bb2b134a3cf0a108"
+    },
+    {
+      "bytes": 151,
+      "path": "split.json",
+      "sha256": "2e38b4b9e0e6e88434d8a64fd92370397f05416e6e8b371657842e3142cfed3b"
+    }
+  ],
+  "prepared_at": "2026-11-25T02:09:37.080796Z",
+  "record_sha256": "03107e49fcc3d93d6d4f6ba30e912bd4d7a4599e84fc316e43fa74333fa5cc2f",
+  "revision": 1,
+  "run_id": "ece614fc-1d1a-498f-aa18-f974881e960d",
+  "state": "committed",
+  "transaction_id": "ece614fc-1d1a-498f-aa18-f974881e960d-1"
+}

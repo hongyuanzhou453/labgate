@@ -1,0 +1,41 @@
+{
+  "committed_at": "2026-11-25T02:09:35.269012Z",
+  "input_files": [
+    {
+      "bytes": 51,
+      "path": "config.json",
+      "sha256": "bae5e90bd7102fd5ec58f8ba321f8d48bb33ce68ac45a588605a01353b64cb9e"
+    },
+    {
+      "bytes": 228,
+      "path": "data.json",
+      "sha256": "4c5da9f71986085f3beb2dfdb770918850db3d392318c59e652d445c09752af2"
+    },
+    {
+      "bytes": 35,
+      "path": "data/labels.csv",
+      "sha256": "f6f55e542f5a13602cf7ac5ac2d92f548cc312d4653eb80e50fab8c9a4a2bd64"
+    },
+    {
+      "bytes": 2764,
+      "path": "preflight/f1a2ac37-0e33-4365-bfb4-798391cd4c25.json",
+      "sha256": "b94aed414b5011bae4daa797970fe765c8f460d36d4486f4f30d266856f51fb3"
+    },
+    {
+      "bytes": 676,
+      "path": "protocol.json",
+      "sha256": "cb94be9f788d9cea2131c24a796f5d41ff2835acb3bec9fe5c06c66b9f0eec1b"
+    },
+    {
+      "bytes": 151,
+      "path": "split.json",
+      "sha256": "0133f22496b86564a7d3331ce34a16df72a1ca222c2e1eca6815a740e36d4e6d"
+    }
+  ],
+  "prepared_at": "2026-11-25T02:09:35.254301Z",
+  "record_sha256": "0e95fa859910f2aa1f3ab915f2542369bd12d6d87336f52751f30c5994fd116d",
+  "revision": 0,
+  "run_id": "f1a2ac37-0e33-4365-bfb4-798391cd4c25",
+  "state": "committed",
+  "transaction_id": "f1a2ac37-0e33-4365-bfb4-798391cd4c25-0"
+}

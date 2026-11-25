@@ -1,0 +1,28 @@
+{
+  "schema_version": "eligibility-preview.v1",
+  "problem_id": "demo-selectivity-benchmark",
+  "eligibility_id": "E-DEMO-20261124",
+  "mode": "diagnostic_only",
+  "formal_use_allowed": false,
+  "intended_uses": [
+    "diagnostic",
+    "point_training"
+  ],
+  "design_ref": {
+    "path": "研究管理/问题/demo-selectivity-benchmark/协议/H1-MINIMAL/draft-1/design.json",
+    "sha256": "8fcb4a4bbc9dcd827b35b9098aefe42f0fd63e0ab5702802ec6387112a1eac65",
+    "bytes": 2535
+  },
+  "source_snapshot_refs": [
+    {
+      "path": "demo_data/demo_audit_review.md",
+      "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0",
+      "bytes": 264
+    }
+  ],
+  "measurements_ref": {
+    "path": "demo_data/demo_measurements.csv",
+    "sha256": "1855a8f26fec8519a542d46f30944f1eb7272b9c9d7116cde9a6530df22c9ecc",
+    "bytes": 5472
+  }
+}

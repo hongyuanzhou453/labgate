@@ -1,0 +1,102 @@
+{
+  "schema_version": "labgate-dashboard-manifest.v1",
+  "generator": "研究管理/看板/build_dashboard.py",
+  "built_at_utc": "2026-11-25T02:09:40Z",
+  "read_only": true,
+  "formal_use_allowed": false,
+  "counts": {
+    "papers": 8,
+    "verified_results": 16,
+    "core_papers": 4,
+    "decisions_confirmed": 0,
+    "decisions_required": 17,
+    "weekly_reports": 2,
+    "glossary_terms": 6,
+    "exhibits": 3
+  },
+  "payload_sha256": "7a6914eda7000ca0c9e4b78844d4444143fa464d8e2125013b170316acbff44e",
+  "kit_assets": [
+    {
+      "path": "研究管理/看板/vendor/rtr-ui-kit/rtr-ui.css",
+      "bytes": 64896,
+      "sha256": "1d48c381fbafac4eefc0a82be6ca6bdd4ff47d72dcf2aa0cb9807134f686212a"
+    },
+    {
+      "path": "研究管理/看板/vendor/rtr-ui-kit/rtr-ui.iife.js",
+      "bytes": 88558,
+      "sha256": "701e791e4e8740bbcc4e23812f66333441ee3e2e2242f9620c5f3f8c2aee4f5b"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "demo_data/demo_compare.tsv",
+      "bytes": 1942,
+      "sha256": "8cca972ee09277e696d70bba8c2f6c03b698979b5fb286d2f95d35f46af2b08c"
+    },
+    {
+      "path": "demo_data/demo_glossary.json",
+      "bytes": 1484,
+      "sha256": "e7ac1002c5da701ebf30165c2ce16aba751dcf19322056f79be5f83ea46751a6"
+    },
+    {
+      "path": "demo_data/demo_panel_audit.json",
+      "bytes": 1511,
+      "sha256": "871a89af0dfd0080cf9bf3399b521a80c488298f40687aa4eb2a9b27168d0f9d"
+    },
+    {
+      "path": "demo_data/demo_synthetic_eval.json",
+      "bytes": 913,
+      "sha256": "a2a5d0e3e0fa68bf5d6aac3cbd16f099facfb90cf3b384bbd62b480305537f97"
+    },
+    {
+      "path": "研究管理/_交付/demo-baseline/runtime-final/report.json",
+      "bytes": 80765,
+      "sha256": "de5b3bdcf3ce92daeabff7622a7dd1176e6e95eb98d19c07cf9b2472b6ddc94d"
+    },
+    {
+      "path": "研究管理/周报记录/2026-W47.json",
+      "bytes": 6179,
+      "sha256": "d11d25accc5b63fd584bbbbe0da78d43052f9deffa135c1695028ac6653bcc17"
+    },
+    {
+      "path": "研究管理/周报记录/2026-W48.json",
+      "bytes": 6295,
+      "sha256": "ba3f2cc43508e45a3a4d8cc33b7477fd556b615bfc1eb4bb3c122ea50a6ec17f"
+    },
+    {
+      "path": "研究管理/数据/准入/E-DEMO-20261124/manifest.json",
+      "bytes": 936,
+      "sha256": "5f2f7b7756c88225b18a7e42217988bf42aacc558f9640b6f187489a0f7fb4e8"
+    },
+    {
+      "path": "研究管理/规范/阶段要求.json",
+      "bytes": 2239,
+      "sha256": "9a6fbda3cd34d28b7d6e240c4c11598e684e3f18c227648e46c41a7001e50849"
+    },
+    {
+      "path": "研究管理/问题/demo-selectivity-benchmark/协议/H1-MINIMAL/draft-1/design.json",
+      "bytes": 2535,
+      "sha256": "8fcb4a4bbc9dcd827b35b9098aefe42f0fd63e0ab5702802ec6387112a1eac65"
+    },
+    {
+      "path": "论文内容索引/literature.db",
+      "bytes": 69632,
+      "sha256": "2860ad5107d0424dd88260ca4a9c9847dd5138692f63c9be28b1137d08193b9c"
+    }
+  ],
+  "output": {
+    "path": "研究管理/派生/看板/科研看板.html",
+    "bytes": 232167,
+    "sha256": "580013f7e84bde1871249c734ef7590bb446468808e3cc2ce65b27e42e4ce9a0",
+    "sentinels": [
+      "id=\"tab-overview\"",
+      "id=\"tab-routes\"",
+      "id=\"tab-literature\"",
+      "id=\"tab-reports\"",
+      "id=\"paper-dialog\"",
+      "id=\"rtr-data\"",
+      "RTR.createExhibitGroup",
+      "RTR.attachGlossary"
+    ]
+  }
+}

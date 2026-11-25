@@ -1,0 +1,188 @@
+{
+  "audit_binding": {
+    "review_ref": {
+      "bytes": 264,
+      "path": "demo_data/demo_audit_review.md",
+      "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0"
+    },
+    "scope": "Synthetic demonstration source map; verifies paths, byte sizes, SHA-256 digests, and tabular headers without duplicating upstream files",
+    "status": "checked_in_scope"
+  },
+  "captured_at": "2026-11-25T02:09:34.337721Z",
+  "entries": [
+    {
+      "authority_scope": "上游唯一来源；本登记只保存接入版本和位置",
+      "bytes": 4928,
+      "check_scope": "仅核路径、字节哈希和表头；不代表文献内容复审",
+      "evidence_ref": {
+        "bytes": 4928,
+        "path": "demo_data/demo_ledger.csv",
+        "sha256": "a7c1cc802d232e88f0b09f57b8e2a2d5ef2b0f0858252ea302b5eff244008673"
+      },
+      "header": [
+        "id",
+        "year",
+        "authors",
+        "title",
+        "venue_or_status",
+        "doi_or_url",
+        "topic",
+        "added_in_round",
+        "evidence_mode",
+        "evidence_note",
+        "supports_conclusion",
+        "peer_reviewed",
+        "local_pdf",
+        "priority",
+        "establishes",
+        "does_not_establish"
+      ],
+      "logical_name": "demo_ledger.csv",
+      "resolved_path": "demo_data/demo_ledger.csv",
+      "restrictions": [
+        "只读",
+        "不等于正式数据准入",
+        "保留上游核验范围"
+      ],
+      "review_status": "checked_in_scope",
+      "sha256": "a7c1cc802d232e88f0b09f57b8e2a2d5ef2b0f0858252ea302b5eff244008673",
+      "source_id": "SRC-LEDGER",
+      "source_kind": "research_source"
+    },
+    {
+      "authority_scope": "上游唯一来源；本登记只保存接入版本和位置",
+      "bytes": 270,
+      "check_scope": "仅核路径、字节哈希和表头；不代表文献内容复审",
+      "evidence_ref": {
+        "bytes": 270,
+        "path": "demo_data/demo_aliases.json",
+        "sha256": "33339a6831b2298d06556f8559825c99cf5585e05383a19520bc487d87c2d34c"
+      },
+      "header": null,
+      "logical_name": "demo_aliases.json",
+      "resolved_path": "demo_data/demo_aliases.json",
+      "restrictions": [
+        "只读",
+        "不等于正式数据准入",
+        "保留上游核验范围"
+      ],
+      "review_status": "checked_in_scope",
+      "sha256": "33339a6831b2298d06556f8559825c99cf5585e05383a19520bc487d87c2d34c",
+      "source_id": "SRC-ALIASES",
+      "source_kind": "research_source"
+    },
+    {
+      "authority_scope": "上游唯一来源；本登记只保存接入版本和位置",
+      "bytes": 1942,
+      "check_scope": "仅核路径、字节哈希和表头；不代表文献内容复审",
+      "evidence_ref": {
+        "bytes": 1942,
+        "path": "demo_data/demo_compare.tsv",
+        "sha256": "8cca972ee09277e696d70bba8c2f6c03b698979b5fb286d2f95d35f46af2b08c"
+      },
+      "header": [
+        "row_id",
+        "paper_id",
+        "任务",
+        "使用时已知信息",
+        "方法改变了什么",
+        "数据与标签预算",
+        "划分与评价",
+        "排除的替代解释",
+        "相对本问题",
+        "核验"
+      ],
+      "logical_name": "demo_compare.tsv",
+      "resolved_path": "demo_data/demo_compare.tsv",
+      "restrictions": [
+        "只读",
+        "不等于正式数据准入",
+        "保留上游核验范围"
+      ],
+      "review_status": "checked_in_scope",
+      "sha256": "8cca972ee09277e696d70bba8c2f6c03b698979b5fb286d2f95d35f46af2b08c",
+      "source_id": "SRC-COMPARE",
+      "source_kind": "research_source"
+    },
+    {
+      "authority_scope": "上游唯一来源；本登记只保存接入版本和位置",
+      "bytes": 522,
+      "check_scope": "仅核路径、字节哈希和表头；不代表文献内容复审",
+      "evidence_ref": {
+        "bytes": 522,
+        "path": "demo_data/demo_edges.csv",
+        "sha256": "314b0750dc3b100c945d2b5b81f499818770202fb3a677edbdd73fa962902cb0"
+      },
+      "header": [
+        "from_id",
+        "to_id",
+        "relation",
+        "compare_rows",
+        "locator",
+        "status",
+        "basis"
+      ],
+      "logical_name": "demo_edges.csv",
+      "resolved_path": "demo_data/demo_edges.csv",
+      "restrictions": [
+        "只读",
+        "不等于正式数据准入",
+        "保留上游核验范围"
+      ],
+      "review_status": "checked_in_scope",
+      "sha256": "314b0750dc3b100c945d2b5b81f499818770202fb3a677edbdd73fa962902cb0",
+      "source_id": "SRC-EDGES",
+      "source_kind": "research_source"
+    },
+    {
+      "authority_scope": "上游唯一来源；本登记只保存接入版本和位置",
+      "bytes": 264,
+      "check_scope": "Synthetic demonstration source map; verifies paths, byte sizes, SHA-256 digests, and tabular headers without duplicating upstream files",
+      "evidence_ref": {
+        "bytes": 264,
+        "path": "demo_data/demo_audit_review.md",
+        "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0"
+      },
+      "header": null,
+      "logical_name": "demo_audit_review.md",
+      "resolved_path": "demo_data/demo_audit_review.md",
+      "restrictions": [
+        "只读",
+        "不等于正式数据准入",
+        "保留上游核验范围"
+      ],
+      "review_status": "checked_in_scope",
+      "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0",
+      "source_id": "SRC-AUDIT-REVIEW",
+      "source_kind": "audit"
+    },
+    {
+      "authority_scope": "上游唯一来源；本登记只保存接入版本和位置",
+      "bytes": 1511,
+      "check_scope": "Synthetic demonstration source map; verifies paths, byte sizes, SHA-256 digests, and tabular headers without duplicating upstream files",
+      "evidence_ref": {
+        "bytes": 264,
+        "path": "demo_data/demo_audit_review.md",
+        "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0"
+      },
+      "header": null,
+      "logical_name": "demo_panel_audit.json",
+      "resolved_path": "demo_data/demo_panel_audit.json",
+      "restrictions": [
+        "只读",
+        "不等于正式数据准入",
+        "保留上游核验范围"
+      ],
+      "review_status": "checked_in_scope",
+      "sha256": "871a89af0dfd0080cf9bf3399b521a80c488298f40687aa4eb2a9b27168d0f9d",
+      "source_id": "SRC-AUDIT-ELIGIBILITY",
+      "source_kind": "audit"
+    }
+  ],
+  "schema_version": "sources.v0.2",
+  "source_map_ref": {
+    "bytes": 1051,
+    "path": "研究管理/来源映射.json",
+    "sha256": "53cc9bb44bd61263284e60839a8416d0b393406f093768bb7d3e4119a4f98ac7"
+  }
+}

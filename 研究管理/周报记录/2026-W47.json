@@ -1,0 +1,119 @@
+{
+  "advisor_email_en": {
+    "subject": "Weekly Research Update (W47): Synthetic Eligibility Audit and Benchmark Framing",
+    "body": "Dear Advisor,\n\nThis week I completed the synthetic data-eligibility audit on the candidate selectivity panels and organized the literature baseline without initiating any formal model training yet. Specifically, we verified measurement boundary types (exact points vs. right-censored inequalities) and counted multi-ligand congeneric scaffold series across candidate routes. Broad screening panels contain very few scaffolds with three or more bilateral ligands, indicating that series coverage is the primary structural constraint prior to choosing transfer baselines. Meanwhile, our synthetic power diagnostics confirm that at least twelve independent series are required for stable error bounds.\n\nNo formal endpoints, thresholds, or final test splits have been locked yet. Next week, I will prepare a concise side-by-side comparison across multi-series medicinal chemistry candidates and broad single-panel benchmarks, validate synthetic positive and null evaluation controls locally, and meet to align on the target/off-target system and primary endpoint before freezing the protocol. If our schedule shifts, I will first finalize the multi-route diagnostic comparison locally.\n\nBest regards,\nResearcher"
+  },
+  "as_of_date": "2026-11-22",
+  "author": "Researcher",
+  "bundle_notes": [],
+  "capacity_budget": {
+    "max_committed_tasks": 3,
+    "max_conditional_tasks": 2,
+    "max_effort_points": 6,
+    "max_large_tasks": 1
+  },
+  "decisions_needed": [
+    {
+      "matter": "确认起步数据路线与主测量端点（Kd 或 Ki）",
+      "who": "PI 与研究者共同确认",
+      "options_and_recommendation": "① 优先多系列药化数据集检验跨系列泛化；② 保留广谱单库作为跨骨架外部校验。",
+      "needed_by": "12 月初前"
+    }
+  ],
+  "deferred_backlog": [],
+  "extra_bundle_refs": [],
+  "header_note": "承接 W46 基线计划；已完成合成准入与文献库联查验证，待补齐多路线对照表后定题。",
+  "is_initial_week": false,
+  "one_line_summary": "完成合成选择性数据资格核查与全量文献库结构化校验，识别宽谱筛查面板系列瓶颈。",
+  "other_outputs": [
+    "合成数据准入清单",
+    "只读文献关联索引"
+  ],
+  "parent_ref": {
+    "bytes": 805,
+    "kind": "legacy_markdown",
+    "path": "demo_data/demo_w46_baseline.md",
+    "sha256": "3b50c4fcc4b0143e3e2fc9c07dda287bae405fd6f7036f8bdc2a71a57f3c3be9",
+    "week_id": "2026-W46"
+  },
+  "period_end": "2026-11-22",
+  "period_start": "2026-11-16",
+  "schema_version": "weekly-record.v1",
+  "tracks": [
+    {
+      "carryover_reconciliation": [
+        {
+          "parent_item_id": "2026-W46-P1-1",
+          "outcome": "done",
+          "note": "完成合成准入表生成与删失点位分离核验",
+          "evidence_refs": [
+            {
+              "path": "demo_data/demo_audit_review.md",
+              "bytes": 264,
+              "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0"
+            }
+          ],
+          "continued_by_task_id": null,
+          "deferred_to_backlog_id": null
+        },
+        {
+          "parent_item_id": "2026-W46-P1-2",
+          "outcome": "partial",
+          "note": "已整理研究边界，待补齐多系列对照实数后一并定题",
+          "evidence_refs": [],
+          "continued_by_task_id": "W48-T1",
+          "deferred_to_backlog_id": null
+        }
+      ],
+      "completion_status": "部分完成",
+      "completion_summary": "已完成数据准入规则生成与文献核验对齐；因发现广谱面板多配体系列稀疏，选题与端点讨论材料待补齐备选路线后开展。",
+      "deliverable_refs": [
+        {
+          "path": "demo_data/demo_audit_review.md",
+          "bytes": 264,
+          "sha256": "87be3e6506ceb8fac180dd28e70e26fed49a5f51d9f2c4356596c051507451b0",
+          "bundle_name": "01_合成数据审计摘要.md",
+          "label": "合成数据审计摘要",
+          "purpose": "合成测量边界与系列清点摘要"
+        }
+      ],
+      "next_week_plan": [
+        {
+          "task_id": "W48-T1",
+          "summary": "汇总多系列候选面板与广谱单库对照实数，形成定题讨论材料",
+          "kind": "data_audit",
+          "effort": "M",
+          "commitment": "committed",
+          "dependency": "self_contained",
+          "due_date": "2026-11-26",
+          "deliverable_or_criterion": "可核查的多路线系列容量与供体覆盖摘要表",
+          "if_blocked_fallback": null
+        },
+        {
+          "task_id": "W48-T2",
+          "summary": "与指导者沟通确认示例课题范围、主数据源路线及测量端点",
+          "kind": "advisor_alignment",
+          "effort": "M",
+          "commitment": "committed",
+          "dependency": "awaits_pi",
+          "due_date": "2026-11-28",
+          "deliverable_or_criterion": "形成书面确认意见并留存外置确认原件",
+          "if_blocked_fallback": "若沟通顺延，先在隔离合成真值上完成三档评价原型验收"
+        }
+      ],
+      "parent_track_key": "1",
+      "problem_id": "demo-selectivity-benchmark",
+      "progress_points": [
+        "**数据准入核查**：严格区分精确点值与删失上下界，避免将未命中测量误作连续效价差距。",
+        "**系列覆盖识别**：合成审计显示广谱面板以每骨架一两个代表分子为主，多配体系列数有限。",
+        "**对方案的推论**：将论证架构收敛为正负结果均可闭环的三层判别流程，先确定系列容量再冻结测试集。"
+      ],
+      "status_level": "有风险",
+      "status_reason": "尚需确认采用多系列药化主台还是单库簇留出路线。",
+      "this_week_progress": "围绕公开激酶面板能否按同系物系列检验借用差异开展核查（未跑正式模型训练）：",
+      "title": "历史数据选择与选择性预测（合成示例）",
+      "track_id": "demo-borrowing"
+    }
+  ],
+  "week_id": "2026-W47"
+}

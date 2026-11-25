@@ -1,0 +1,16 @@
+{
+  "gpu_hours": 0.5,
+  "missing_reasons": {
+    "baseline_id": "not_applicable",
+    "commit": "not_applicable",
+    "env.cuda": "not_applicable",
+    "env.driver": "not_applicable",
+    "env.gpu_model": "not_applicable",
+    "env.lockfile_sha256": "not_applicable",
+    "env.resolved_env_sha256": "not_applicable",
+    "gpu_hours": "not_checked",
+    "repo": "not_applicable"
+  },
+  "resource_accounting_status": "measured",
+  "revision_kind": "progress"
+}

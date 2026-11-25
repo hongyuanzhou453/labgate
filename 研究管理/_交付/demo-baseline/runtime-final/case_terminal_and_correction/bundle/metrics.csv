@@ -1,0 +1,2 @@
+metric_id,endpoint,split_id,fold_id,value,unit,n_measurements,n_compounds,n_groups,aggregation
+MAE,fixture,S-fixture,F0,0.0,arbitrary,2,2,2,mean
