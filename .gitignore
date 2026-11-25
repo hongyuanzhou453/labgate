@@ -2,8 +2,10 @@ __pycache__/
 *.py[cod]
 *.pyo
 .DS_Store
-*.lock
 .pytest_cache/
+研究管理/.reports.lock
+研究管理/.workbench.lock
+研究管理/派生/看板/.dashboard.lock
 研究管理/_交付/_ci_run/
 研究管理/_交付/_ci_run_*/
 研究管理/实验登记/
